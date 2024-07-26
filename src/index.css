@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+    background-image: url('../public/back-img/backimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.links {
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    width: 100vw;
+    height: 70px;
+    z-index: 10;
+}
+
+.hero {
+    margin-top: 8rem;
+}
+
+.logo img {
+    filter: invert(1) brightness(0);
+    width: 12rem;
+    margin-left: 1rem;
+}
+
+.links ul li {
+    margin: 0 2rem;
+}
+
+.info__hero {
+    flex-basis: 36%;
+}
+
+.img__hero {
+    flex-basis: 56%;
+}
+
+.icons {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.icons svg {
+    cursor: pointer;
+}
+
+@media (max-width: 1181px) {
+    .hero {
+        margin-top: 10rem;
+    }
+
+    .info__hero h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        flex-basis: 1050px;
+    }
+}
+
+
+@media (max-width: 840px) {
+
+
+    .hero {
+        margin-top: 8rem;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .info__hero,
+    .img__hero {
+        flex-basis: 80%;
+        margin: 24px 0;
+    }
+
+    .info__hero {
+        text-align: center;
+    }
+
+    .info__hero h1 {
+        font-size: 24px;
+    }
+
+    .info__hero p {
+        font-size: 15px;
+    }
+
+    .btn__hero {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        /* position: relative; */
+    }
+
+    .links nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 10;
+        background: #f2f2f2;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        transform: translateY(0);
+    }
+
+    .links nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 3rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .icons {
+        display: flex;
+        right: 22px;
+    }
+
+    .icons .bars {
+        display: block;
+    }
+
+    .icons .cancel {
+        display: block;
+    }
+}
+
+.contact {
+    background-image: url('../public/contact-img/contact.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 150vh;
+    overflow: hidden;
+}
